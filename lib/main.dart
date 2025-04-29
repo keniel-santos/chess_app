@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
+import 'screens/initial_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/register_screen.dart';
 import 'screens/home_screen.dart';
 
 void main() {
@@ -11,10 +13,12 @@ void main() {
           (context) => MaterialApp(
             useInheritedMediaQuery: true,
             debugShowCheckedModeBanner: false,
-            initialRoute: 'login',
+            initialRoute: 'initial',
             routes: {
-              'home': (context) => const HomeScreen(),
+              'initial': (context) => const InitialScreen(),
               'login': (context) => const LoginScreen(),
+              'register': (context) => const RegisterScreen(),
+              'home': (context) => const HomeScreen(),
             },
           ),
     ),
