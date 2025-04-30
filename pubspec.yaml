@@ -22,3 +22,6 @@ flutter:
   assets:
     - assets/sketchess_logo.png
     - assets/sketchess_logo_login.png
+    - assets/login_icon.png
+    - assets/registration_icon.png
+    - assets/info_icon.png
